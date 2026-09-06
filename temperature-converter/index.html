@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="converter-card">
+
+        <h1>Temperature Converter</h1>
+
+        <p class="subtitle">
+            Convert temperatures quickly and accurately
+        </p>
+
+        <div class="input-section">
+
+            <label for="temperature">
+                Enter Temperature
+            </label>
+
+            <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter a value"
+            >
+
+        </div>
+
+        <div class="conversion-section">
+
+            <div class="unit-box">
+
+                <label for="fromUnit">
+                    From
+                </label>
+
+                <select id="fromUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+
+            </div>
+
+            <button id="swapBtn" class="swap-btn">
+                ⇄
+            </button>
+
+            <div class="unit-box">
+
+                <label for="toUnit">
+                    To
+                </label>
+
+                <select id="toUnit">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <button id="convertBtn" class="convert-btn">
+            Convert
+        </button>
+
+        <div class="result-box">
+
+            <p class="result-title">
+                Result
+            </p>
+
+            <h2 id="result">
+                —
+            </h2>
+
+        </div>
+
+        <p id="errorMessage" class="error-message"></p>
+
+        <button id="clearBtn" class="clear-btn">
+            Clear
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
